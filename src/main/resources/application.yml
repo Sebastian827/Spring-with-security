@@ -1,0 +1,21 @@
+server:
+  port: 8005
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5433/postgres
+    username: postgres
+    password: admin
+  jpa:
+    hibernate:
+      ddl-auto: update
+    
+
+security:
+  oauth2:
+    jwt:
+      key: 3st03sVn4Cl4V3
+      expire: 10800
+    client:
+      id: dev
+      secret: dev
